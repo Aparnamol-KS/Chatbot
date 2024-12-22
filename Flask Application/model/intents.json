@@ -1,0 +1,269 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "How are you?", "Hello", "Good day", "What's up?", "Hey there!", "Greetings"],
+        "responses": ["Hello! How can I assist you today?", "Hi there! How can I help with your health concerns?"],
+        "context_set": ""
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "See you later", "Bye", "Take care", "Catch you later"],
+        "responses": ["Goodbye! Stay healthy!", "Take care! See you soon."],
+        "context_set": ""
+      },
+      {
+        "tag": "general_health",
+        "patterns": ["What is health?", "How to maintain good health?", "Give me tips for staying healthy"],
+        "responses": [
+          "Health is a combination of physical, mental, and social well-being. Focus on nutrition, exercise, and sleep.",
+          "Staying healthy includes eating a balanced diet, regular physical activity, and stress management."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mental_health",
+        "patterns": ["What is mental health?", "How can I improve my mental health?", "What affects mental health?"],
+        "responses": [
+          "Mental health includes emotional and psychological well-being. Practice mindfulness, connect with loved ones, and seek help if needed.",
+          "Regular exercise, sleep, and hobbies can positively impact mental health."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "nutrition",
+        "patterns": ["What is a balanced diet?", "What should I eat daily?", "What are healthy foods?"],
+        "responses": [
+          "A balanced diet includes fruits, vegetables, lean proteins, whole grains, and healthy fats.",
+          "Limit sugary and processed foods. Stay hydrated for overall well-being."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "exercise",
+        "patterns": ["How often should I exercise?", "Why is exercise important?", "What are good workouts?"],
+        "responses": [
+          "Adults should aim for at least 30 minutes of moderate exercise most days of the week.",
+          "Incorporate strength training and cardio for a balanced fitness routine."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "common_conditions",
+        "patterns": ["What is a fever?", "How do I treat a cold?", "Symptoms of the flu?"],
+        "responses": [
+          "Fever is a sign of infection. Stay hydrated and rest. Consult a doctor if it persists.",
+          "Colds are viral infections. Rest, fluids, and over-the-counter meds can help."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "stress",
+        "patterns": ["How to manage stress?", "What causes stress?", "Tips for relaxation?"],
+        "responses": [
+          "Stress can be managed with deep breathing, exercise, and mindfulness.",
+          "Try meditation or spending time in nature to reduce stress."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "hydration",
+        "patterns": ["How much water should I drink?", "Why is hydration important?", "Signs of dehydration?"],
+        "responses": [
+          "Drink 8-10 glasses of water daily. More may be needed in hot weather or during exercise.",
+          "Dehydration can cause fatigue, dizziness, and dry skin. Stay hydrated!"
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "immune_system",
+        "patterns": ["How to boost immunity?", "What helps the immune system?", "Best foods for immunity?"],
+        "responses": [
+          "To boost immunity, eat fruits and vegetables, exercise regularly, and get adequate sleep.",
+          "Foods like citrus fruits, garlic, and yogurt are great for the immune system."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "symptoms",
+        "patterns": ["What are the symptoms of diabetes?", "What does a heart attack feel like?", "Signs of high blood pressure?"],
+        "responses": [
+          "Symptoms of diabetes include frequent urination, thirst, and fatigue. Consult a doctor for a diagnosis.",
+          "Heart attack symptoms include chest pain, shortness of breath, and nausea. Seek immediate medical attention."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "diseases",
+        "patterns": ["What is diabetes?", "Tell me about hypertension", "What causes asthma?"],
+        "responses": [
+          "Diabetes is a condition where the body cannot regulate blood sugar levels. It requires lifestyle and medical management.",
+          "Hypertension, or high blood pressure, can lead to serious health issues. Monitor it regularly and consult a doctor."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "vaccines",
+        "patterns": ["Why are vaccines important?", "What are common vaccines?", "Do I need a flu shot?"],
+        "responses": [
+          "Vaccines help prevent diseases like the flu, measles, and COVID-19. Stay up-to-date on vaccinations.",
+          "Flu shots are recommended annually to protect against seasonal influenza."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "sleep",
+        "patterns": ["How much sleep do I need?", "Why is sleep important?", "Tips for better sleep?"],
+        "responses": [
+          "Adults need 7-9 hours of sleep nightly. Children and teenagers need more.",
+          "To improve sleep, maintain a consistent bedtime, avoid screens before bed, and create a relaxing sleep environment."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "first_aid",
+        "patterns": ["What to do for a burn?", "How to treat a cut?", "What to do in an emergency?"],
+        "responses": [
+          "For burns, cool the area with water and cover with a clean bandage. Seek medical care if severe.",
+          "For cuts, clean the wound, apply pressure to stop bleeding, and cover with a sterile bandage."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mental_health_professionals",
+        "patterns": ["Who can help with mental health?", "What is a therapist?", "Do I need a psychologist?"],
+        "responses": [
+          "Therapists, psychologists, and psychiatrists are professionals who can help with mental health concerns.",
+          "If you're feeling overwhelmed, it's always a good idea to reach out to a mental health professional."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "covid_19",
+        "patterns": ["What is COVID-19?", "Tell me about coronavirus", "What are the symptoms of COVID-19?"],
+        "responses": [
+          "COVID-19 is caused by the coronavirus. Symptoms include fever, cough, and difficulty breathing. Follow public health guidelines for prevention.",
+          "Coronavirus symptoms can range from mild to severe. If you experience severe symptoms, seek medical attention immediately."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mental_wellness",
+        "patterns": ["What is mindfulness?", "How to practice mindfulness?", "Benefits of meditation?"],
+        "responses": [
+          "Mindfulness is staying present in the moment. Meditation and deep breathing are great ways to practice mindfulness.",
+          "Meditation helps reduce stress and improve focus. Try starting with just 5-10 minutes a day."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "healthy_habits",
+        "patterns": ["What are healthy daily habits?", "How to start a healthy routine?", "Tips for better lifestyle?"],
+        "responses": [
+          "Healthy habits include regular exercise, balanced meals, staying hydrated, and good sleep hygiene.",
+          "Start your day with a healthy breakfast, move regularly, and prioritize self-care."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "allergies",
+        "patterns": ["What causes allergies?", "How to manage allergies?", "What are common allergens?"],
+        "responses": [
+          "Allergies are caused by an overreaction of the immune system to substances like pollen, dust, or certain foods.",
+          "To manage allergies, avoid triggers, and consider antihistamines or consulting an allergist."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "child_health",
+        "patterns": ["How to care for a baby?", "What is good nutrition for kids?", "Vaccines for children?"],
+        "responses": [
+          "Caring for a baby includes regular feeding, sleep schedules, and keeping up with vaccinations.",
+          "Good nutrition for kids includes fruits, vegetables, proteins, and whole grains. Limit sugary snacks."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "heart_health",
+        "patterns": ["How to keep my heart healthy?", "What are symptoms of heart disease?", "Heart-healthy diet tips?"],
+        "responses": [
+          "For a healthy heart, exercise regularly, eat a balanced diet, and avoid smoking.",
+          "Heart disease symptoms include chest pain, shortness of breath, and fatigue. Consult a doctor for any concerns."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "women_health",
+        "patterns": ["What is prenatal care?", "How to manage menstrual pain?", "What is menopause?"],
+        "responses": [
+          "Prenatal care involves regular checkups during pregnancy to ensure the health of the mother and baby.",
+          "For menstrual pain, try heating pads, over-the-counter pain relief, and staying hydrated. If pain is severe, consult a doctor."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "fitness",
+        "patterns": ["What are the benefits of yoga?", "How to stay fit at home?", "What is strength training?"],
+        "responses": [
+          "Yoga improves flexibility, strength, and mental focus. It's great for overall well-being.",
+          "For home fitness, try bodyweight exercises like squats, push-ups, and planks. Stay consistent for best results."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "first_aid_cpr",
+        "patterns": ["How to perform CPR?", "What to do in a choking emergency?", "Basic first aid tips?"],
+        "responses": [
+          "CPR involves chest compressions and rescue breaths. Learn proper technique through certified training.",
+          "For choking, perform the Heimlich maneuver. Seek medical attention if the person doesn't recover."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "skin_health",
+        "patterns": ["How to treat acne?", "Tips for healthy skin?", "What causes dry skin?"],
+        "responses": [
+          "Acne can be treated with gentle cleansing and over-the-counter products containing benzoyl peroxide or salicylic acid.",
+          "For healthy skin, drink water, eat a balanced diet, and use sunscreen daily."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "elderly_health",
+        "patterns": ["Health tips for seniors?", "How to prevent falls in elderly?", "Best diet for aging adults?"],
+        "responses": [
+          "Seniors should stay active, eat nutrient-dense foods, and have regular health checkups.",
+          "To prevent falls, ensure well-lit spaces, remove tripping hazards, and encourage strength and balance exercises."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "pain_management",
+        "patterns": ["How to relieve back pain?", "What causes joint pain?", "Tips for managing chronic pain?"],
+        "responses": [
+          "Back pain relief includes stretching, good posture, and avoiding heavy lifting. Consult a doctor for persistent pain.",
+          "Joint pain can be caused by arthritis or injury. Gentle exercises and anti-inflammatory foods can help."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "mental_health_support",
+        "patterns": ["Who can I talk to about depression?", "Where to find mental health help?", "How to support someone with anxiety?"],
+        "responses": [
+          "Reach out to mental health professionals like therapists or counselors. Support groups can also help.",
+          "Listen without judgment and encourage seeking professional help for someone struggling with anxiety."
+        ],
+        "context_set": ""
+      },
+      {
+        "tag": "healthy_sleep",
+        "patterns": ["How to overcome insomnia?", "Why is REM sleep important?", "Tips for better sleep quality?"],
+        "responses": [
+          "To overcome insomnia, maintain a consistent sleep schedule and avoid caffeine before bed.",
+          "REM sleep is essential for memory and mood regulation. Ensure a calm sleeping environment for better quality."
+        ],
+        "context_set": ""
+      }
+    ]
+  }
+  
