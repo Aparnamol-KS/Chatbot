@@ -2,7 +2,7 @@
     font-family: "Lovers Quarrel", serif;
     font-weight: 400;
     font-style: normal;
-    color:#AAAAAA;
+    color: #AAAAAA;
 }
 
 body {
@@ -11,63 +11,61 @@ body {
     box-sizing: border-box;
     color: white;
     background-color: black;
-   
+
 }
+
 .tinos-regular {
     font-family: "Tinos", serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  
+}
 
-.container{
-    display:flex;
-    justify-content:center;
-    flex-direction:column;
-    align-items:center;
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #chat-box {
     width: 80%;
     height: 650px;
     margin-top: 150px;
-    
+
 }
 
 #chat-content {
     overflow-y: auto;
     padding: 10px;
     scroll-behavior: smooth;
-    height:85%;
+    height: 85%;
 }
 
-#chat-messages {
-    
 
-}
 
 #chat-content::-webkit-scrollbar {
     display: none;
 }
 
-#user-input{
-    border:none;
-    width:100%;
+#user-input {
+    border: none;
+    width: 100%;
     background-color: #2F2F2F;
-    outline:none;
-    color:white;
+    outline: none;
+    color: white;
 }
 
 #chat-input {
     align-items: center;
     border-radius: 10px;
-    background-color:#2F2F2F;
+    background-color: #2F2F2F;
     position: fixed;
     bottom: 25px;
-    width:70%;
-    
-    
+    width: 70%;
+
+
 }
 
 
@@ -81,11 +79,11 @@ body {
 
 
 
-.just-end{
+.just-end {
     justify-content: end;
 }
 
-.just-start{
+.just-start {
     justify-content: start;
 }
 
@@ -93,10 +91,10 @@ body {
 .chat-block {
     display: flex;
     width: 100%;
-    padding:10px;
+    padding: 10px;
 }
 
-.received-text{
+.received-text {
     display: flex;
     width: auto;
     border-radius: 5px;
@@ -111,7 +109,7 @@ body {
     justify-content: right;
     padding: 10px;
     border-radius: 8px;
-    width:auto;
+    width: auto;
     max-width: 60%;
     word-break: break-word;
     transition: 1s;
@@ -119,7 +117,7 @@ body {
 
 }
 
-.test-click{
+.test-click {
     scale: 1.5;
     transition: 2s;
 }
@@ -129,6 +127,7 @@ body {
         transform: translateY(200px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
