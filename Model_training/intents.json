@@ -1,142 +1,139 @@
 {
     "intents": [
-      {
-        "tag": "greeting",
-        "patterns": ["Hi", "How are you?", "Hello", "Good day", "What's up?", "Hey there!", "Greetings"],
-        "responses": ["Hello! How can I assist you today?", "Hi there! How can I help with your health concerns?"],
-        "context_set": ""
+        {
+            "tag": "greeting",
+            "patterns": ["Hi*", "How are you?", "Hello", "Good day", "What's up?", "Hey there!", "Greetings"],
+            "responses": ["Hello! How can I assist you today?", "Hi there! How can I help with your health concerns?"],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": ["Goodbye", "See you later", "Bye", "Take care", "Catch you later"],
+            "responses": ["Goodbye! Stay healthy!", "Take care! See you soon."],
+            "context_set": ""
+        },
+        {
+            "tag": "general_health",
+            "patterns": ["What is health?", "How to maintain good health?", "Give me tips for staying healthy"],
+            "responses": [
+                "Health is a combination of physical, mental, and social well-being. Focus on nutrition, exercise, and sleep.",
+                "Staying healthy includes eating a balanced diet, regular physical activity, and stress management."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "what_is_your_name",
+            "patterns": ["What is your name?", "Who are you?", "Tell me your name", "May I know your name?", "What's your name?"],
+            "responses": ["I'm Health Buddy, your assistant for all health-related queries.", "You can call me Health Buddy!"],
+            "context_set": ""
+        },
+        {
+            "tag": "mental_health",
+            "patterns": ["What is mental health?", "How can I improve my mental health?", "What affects mental health?"],
+            "responses": [
+                "Mental health includes emotional and psychological well-being. Practice mindfulness, connect with loved ones, and seek help if needed.",
+                "Regular exercise, sleep, and hobbies can positively impact mental health."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "nutrition",
+            "patterns": ["What is a balanced diet?", "What should I eat daily?", "What are healthy foods?"],
+            "responses": [
+                "A balanced diet includes fruits, vegetables, lean proteins, whole grains, and healthy fats.",
+                "Limit sugary and processed foods. Stay hydrated for overall well-being."
+            ],
+            "context_set": ""
+        },
+        {
+          "tag": "exercise_routines",
+          "patterns": ["What are good exercises?", "How should I start exercising?", "Suggest a workout plan"],
+          "responses": [
+              "For beginners, start with walking, stretching, and light strength training. Gradually increase intensity.",
+              "A good routine includes cardio, strength training, and flexibility exercises. Customize based on your fitness level."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "goodbye",
-        "patterns": ["Goodbye", "See you later", "Bye", "Take care", "Catch you later"],
-        "responses": ["Goodbye! Stay healthy!", "Take care! See you soon."],
-        "context_set": ""
+          "tag": "hydration",
+          "patterns": ["How much water should I drink?", "Why is hydration important?", "Tell me about staying hydrated"],
+          "responses": [
+              "Aim for at least 8 glasses of water a day. Hydration is essential for all bodily functions.",
+              "Drink water regularly, especially during workouts or in hot weather, to stay hydrated."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "general_health",
-        "patterns": ["What is health?", "How to maintain good health?", "Give me tips for staying healthy"],
-        "responses": [
-          "Health is a combination of physical, mental, and social well-being. Focus on nutrition, exercise, and sleep.",
-          "Staying healthy includes eating a balanced diet, regular physical activity, and stress management."
-        ],
-        "context_set": ""
+          "tag": "sleep",
+          "patterns": ["How much sleep do I need?", "What improves sleep quality?", "Tell me about healthy sleep habits"],
+          "responses": [
+              "Adults need 7-9 hours of sleep. Stick to a consistent schedule and create a relaxing bedtime routine.",
+              "Avoid screens before bed and create a comfortable sleep environment to improve sleep quality."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "mental_health",
-        "patterns": ["What is mental health?", "How can I improve my mental health?", "What affects mental health?"],
-        "responses": [
-          "Mental health includes emotional and psychological well-being. Practice mindfulness, connect with loved ones, and seek help if needed.",
-          "Regular exercise, sleep, and hobbies can positively impact mental health."
-        ],
-        "context_set": ""
+          "tag": "stress_management",
+          "patterns": ["How can I manage stress?", "Tips for stress relief?", "What causes stress?"],
+          "responses": [
+              "Practice mindfulness, deep breathing, or yoga to manage stress. Talk to friends or a therapist if needed.",
+              "Identify stress triggers and focus on healthy coping mechanisms like exercise or journaling."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "nutrition",
-        "patterns": ["What is a balanced diet?", "What should I eat daily?", "What are healthy foods?"],
-        "responses": [
-          "A balanced diet includes fruits, vegetables, lean proteins, whole grains, and healthy fats.",
-          "Limit sugary and processed foods. Stay hydrated for overall well-being."
-        ],
-        "context_set": ""
+          "tag": "mental_health_resources",
+          "patterns": ["Where can I find help for mental health?", "Mental health helplines?", "Support for mental health?"],
+          "responses": [
+              "Reach out to a local counselor or therapist for support. Helplines and community centers can also assist.",
+              "Many online platforms offer mental health resources. Start by consulting a trusted medical professional."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "exercise",
-        "patterns": ["How often should I exercise?", "Why is exercise important?", "What are good workouts?"],
-        "responses": [
-          "Adults should aim for at least 30 minutes of moderate exercise most days of the week.",
-          "Incorporate strength training and cardio for a balanced fitness routine."
-        ],
-        "context_set": ""
+          "tag": "diet_plans",
+          "patterns": ["Suggest a diet plan?", "What is a good weight loss diet?", "How can I gain weight healthily?"],
+          "responses": [
+              "For weight loss, focus on portion control and include high-fiber, low-calorie foods. Consult a dietitian for personalized plans.",
+              "To gain weight healthily, consume nutrient-rich, calorie-dense foods like nuts, avocados, and whole grains."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "common_conditions",
-        "patterns": ["What is a fever?", "How do I treat a cold?", "Symptoms of the flu?"],
-        "responses": [
-          "Fever is a sign of infection. Stay hydrated and rest. Consult a doctor if it persists.",
-          "Colds are viral infections. Rest, fluids, and over-the-counter meds can help."
-        ],
-        "context_set": ""
+          "tag": "first_aid",
+          "patterns": ["What is basic first aid?", "How do I treat a cut?", "What should I do in an emergency?"],
+          "responses": [
+              "For minor cuts, clean the wound, apply pressure to stop bleeding, and cover with a bandage. Seek help for severe injuries.",
+              "In emergencies, call local emergency services. Learn CPR and basic first aid to handle critical situations."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "stress",
-        "patterns": ["How to manage stress?", "What causes stress?", "Tips for relaxation?"],
-        "responses": [
-          "Stress can be managed with deep breathing, exercise, and mindfulness.",
-          "Try meditation or spending time in nature to reduce stress."
-        ],
-        "context_set": ""
+          "tag": "immunity_boost",
+          "patterns": ["How can I boost my immunity?", "What are immunity-boosting foods?", "How to stay healthy during flu season?"],
+          "responses": [
+              "Consume foods rich in Vitamin C, Zinc, and antioxidants. Regular exercise and proper sleep also strengthen immunity.",
+              "Stay hydrated, eat a balanced diet, and consider probiotics for gut health to support your immune system."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "hydration",
-        "patterns": ["How much water should I drink?", "Why is hydration important?", "Signs of dehydration?"],
-        "responses": [
-          "Drink 8-10 glasses of water daily. More may be needed in hot weather or during exercise.",
-          "Dehydration can cause fatigue, dizziness, and dry skin. Stay hydrated!"
-        ],
-        "context_set": ""
+          "tag": "common_cold",
+          "patterns": ["How to treat a cold?", "What helps with a runny nose?", "Remedies for a sore throat?"],
+          "responses": [
+              "Stay hydrated, rest, and try warm teas or soups. Over-the-counter medications can relieve symptoms.",
+              "For a sore throat, gargle with warm salt water. Steam inhalation can help clear nasal congestion."
+          ],
+          "context_set": ""
       },
       {
-        "tag": "immune_system",
-        "patterns": ["How to boost immunity?", "What helps the immune system?", "Best foods for immunity?"],
-        "responses": [
-          "To boost immunity, eat fruits and vegetables, exercise regularly, and get adequate sleep.",
-          "Foods like citrus fruits, garlic, and yogurt are great for the immune system."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "symptoms",
-        "patterns": ["What are the symptoms of diabetes?", "What does a heart attack feel like?", "Signs of high blood pressure?"],
-        "responses": [
-          "Symptoms of diabetes include frequent urination, thirst, and fatigue. Consult a doctor for a diagnosis.",
-          "Heart attack symptoms include chest pain, shortness of breath, and nausea. Seek immediate medical attention."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "diseases",
-        "patterns": ["What is diabetes?", "Tell me about hypertension", "What causes asthma?"],
-        "responses": [
-          "Diabetes is a condition where the body cannot regulate blood sugar levels. It requires lifestyle and medical management.",
-          "Hypertension, or high blood pressure, can lead to serious health issues. Monitor it regularly and consult a doctor."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "vaccines",
-        "patterns": ["Why are vaccines important?", "What are common vaccines?", "Do I need a flu shot?"],
-        "responses": [
-          "Vaccines help prevent diseases like the flu, measles, and COVID-19. Stay up-to-date on vaccinations.",
-          "Flu shots are recommended annually to protect against seasonal influenza."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "sleep",
-        "patterns": ["How much sleep do I need?", "Why is sleep important?", "Tips for better sleep?"],
-        "responses": [
-          "Adults need 7-9 hours of sleep nightly. Children and teenagers need more.",
-          "To improve sleep, maintain a consistent bedtime, avoid screens before bed, and create a relaxing sleep environment."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "first_aid",
-        "patterns": ["What to do for a burn?", "How to treat a cut?", "What to do in an emergency?"],
-        "responses": [
-          "For burns, cool the area with water and cover with a clean bandage. Seek medical care if severe.",
-          "For cuts, clean the wound, apply pressure to stop bleeding, and cover with a sterile bandage."
-        ],
-        "context_set": ""
-      },
-      {
-        "tag": "mental_health_professionals",
-        "patterns": ["Who can help with mental health?", "What is a therapist?", "Do I need a psychologist?"],
-        "responses": [
-          "Therapists, psychologists, and psychiatrists are professionals who can help with mental health concerns.",
-          "If you're feeling overwhelmed, it's always a good idea to reach out to a mental health professional."
-        ],
-        "context_set": ""
+          "tag": "exercise_safety",
+          "patterns": ["How to avoid injuries while exercising?", "Safe workout practices?", "What are workout mistakes?"],
+          "responses": [
+              "Warm up before exercising, use proper form, and don't skip rest days. Listen to your body to avoid overtraining.",
+              "Start with light weights or intensity and gradually increase. Ensure proper hydration during workouts."
+          ],
+          "context_set": ""
       },
       {
         "tag": "covid_19",
@@ -263,7 +260,97 @@
           "REM sleep is essential for memory and mood regulation. Ensure a calm sleeping environment for better quality."
         ],
         "context_set": ""
-      }
+      },
+      {
+        "tag": "nutrition_tips",
+        "patterns": ["What should I eat for better health?", "Give me healthy eating tips.", "What is a balanced diet?"],
+        "responses": [
+            "Focus on whole foods like fruits, vegetables, lean proteins, and whole grains. Limit processed foods and sugar.",
+            "A balanced diet includes a variety of foods from all food groups, providing essential nutrients and energy."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "weight_management",
+        "patterns": ["How can I manage my weight?", "What are the best ways to lose weight?", "Give me tips for weight gain"],
+        "responses": [
+            "Focus on a healthy, calorie-controlled diet combined with regular physical activity to manage your weight.",
+            "For weight gain, aim to eat more calorie-dense foods and increase your intake of protein and healthy fats."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "health_goals",
+        "patterns": ["How do I set health goals?", "Give me tips for health goal setting.", "What are SMART health goals?"],
+        "responses": [
+            "Use the SMART method: Specific, Measurable, Achievable, Relevant, and Time-bound goals to track your health progress.",
+            "Start by setting small, achievable goals and track your progress. Celebrate small wins along the way."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "heart_health",
+        "patterns": ["How do I improve heart health?", "What are heart-healthy habits?", "Tell me about heart disease prevention"],
+        "responses": [
+            "Eat a heart-healthy diet rich in fruits, vegetables, whole grains, and healthy fats. Exercise regularly and avoid smoking.",
+            "Maintain a healthy weight, limit sodium intake, and monitor cholesterol levels to keep your heart healthy."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "mental_clarity",
+        "patterns": ["How can I improve mental clarity?", "What are some ways to focus better?", "Tips for improving concentration"],
+        "responses": [
+            "Stay hydrated, practice mindfulness, and get regular sleep to enhance mental clarity. Avoid multitasking.",
+            "Try meditation or journaling to clear your mind and boost your concentration for tasks."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "skin_care",
+        "patterns": ["How do I improve my skin?", "What is a good skincare routine?", "Tips for healthy skin?"],
+        "responses": [
+            "Cleanse your skin daily, use sunscreen, and moisturize regularly. Avoid touching your face to prevent breakouts.",
+            "Eat a diet rich in vitamins A, C, and E for healthy skin, and stay hydrated to maintain a glowing complexion."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "dental_health",
+        "patterns": ["How can I improve dental health?", "What are good dental hygiene habits?", "How do I prevent tooth decay?"],
+        "responses": [
+            "Brush and floss regularly, avoid sugary foods, and visit the dentist for check-ups every six months.",
+            "Use fluoride toothpaste, brush twice a day, and make sure to floss daily for better dental hygiene."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "chronic_conditions",
+        "patterns": ["What is the best way to manage chronic conditions?", "How do I live with a chronic illness?", "Tell me about managing diabetes?"],
+        "responses": [
+            "Work closely with your healthcare provider to develop a treatment plan. Regular check-ups, medication, and lifestyle changes can help manage chronic conditions.",
+            "For conditions like diabetes, focus on a balanced diet, regular exercise, and consistent medication management."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "health_checks",
+        "patterns": ["What health checks should I get regularly?", "Which medical tests should I have done?", "How often should I get a check-up?"],
+        "responses": [
+            "Regular check-ups include blood pressure checks, cholesterol screenings, and routine blood tests. Follow your doctor’s recommendations.",
+            "Women may need to schedule mammograms, and men may need prostate checks based on age and family history."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "cancer_prevention",
+        "patterns": ["How can I prevent cancer?", "What are ways to reduce cancer risk?", "Tell me about cancer prevention tips"],
+        "responses": [
+            "Avoid tobacco, limit alcohol intake, protect your skin from sun exposure, and maintain a healthy weight.",
+            "Regular screenings and a healthy diet with plenty of fruits and vegetables can help reduce cancer risk."
+        ],
+        "context_set": ""
+    }
     ]
   }
   
